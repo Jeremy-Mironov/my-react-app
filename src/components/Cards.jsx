@@ -1,10 +1,10 @@
 export function SkillCard({ title, items }) {
     return (
-        <article className="rounded-xl border border-slate-800 bg-slate-900/80 p-5 shadow-sm">
+        <article className="group rounded-2xl border border-slate-700/70 bg-slate-900/65 p-5 shadow-[0_10px_40px_rgba(2,6,23,0.35)] transition hover:-translate-y-0.5 hover:border-blue-500/45 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.18),0_16px_45px_rgba(2,6,23,0.5)]">
             <h3 className="text-base font-semibold text-slate-100">{title}</h3>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-4 flex flex-wrap gap-2">
                 {items.map((item) => (
-                    <li key={item} className="text-sm text-slate-300">
+                    <li key={item} className="rounded-full border border-slate-700 bg-slate-800/80 px-3 py-1 text-xs font-medium text-slate-200">
                         {item}
                     </li>
                 ))}
@@ -15,14 +15,14 @@ export function SkillCard({ title, items }) {
 
 export function ProjectCard({ title, description, stack }) {
     return (
-        <article className="rounded-xl border border-slate-800 bg-slate-900/80 p-6 shadow-sm">
+        <article className="group rounded-2xl border border-slate-700/70 bg-slate-900/65 p-6 shadow-[0_10px_40px_rgba(2,6,23,0.35)] transition hover:-translate-y-0.5 hover:border-blue-500/45 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.18),0_16px_45px_rgba(2,6,23,0.5)]">
             <h3 className="text-lg font-semibold text-slate-100">{title}</h3>
             <p className="mt-3 text-sm leading-6 text-slate-300">{description}</p>
             <ul className="mt-4 flex flex-wrap gap-2">
                 {stack.map((item) => (
                     <li
                         key={`${title}-${item}`}
-                        className="rounded-full bg-slate-800 px-3 py-1 text-xs font-medium text-slate-200"
+                        className="rounded-full border border-slate-700 bg-slate-800/80 px-3 py-1 text-xs font-medium text-slate-200"
                     >
                         {item}
                     </li>
