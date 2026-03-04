@@ -1,0 +1,35 @@
+.logo-loop {
+    width: 100%;
+    overflow: hidden;
+    padding: 0.6rem 0.9rem;
+    border-radius: 9999px;
+    background: rgb(15 23 42 / 0.6);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.logo-loop__track {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: max-content;
+    will-change: transform;
+}
+
+.logo-loop__item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background: transparent;
+    width: 4.2rem;
+    height: 4.2rem;
+    padding: 0.65rem;
+}
+
+.logo-loop__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
