@@ -1,4 +1,4 @@
-import CardSwap, { Card } from '../../components/CardSwap'
+import CardSwap, { Card } from '../components/CardSwap'
 
 
 export function PortfolioCardSwapSection() {

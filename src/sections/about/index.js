@@ -1,1 +1,0 @@
-export { AboutSkillsSection } from './AboutSkillsSection'

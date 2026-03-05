@@ -1,4 +1,4 @@
-import { contactLinks, contactPageContent } from '../../assets/dummy-data'
+import { contactLinks, contactPageContent } from '../assets/dummy-data'
 
 const contactContent = contactPageContent[0]
 

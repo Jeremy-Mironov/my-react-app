@@ -3,10 +3,10 @@ import {
     aboutPreviewContent,
     aboutPreviewStats,
     profileCardContent,
-} from '../../assets/dummy-data'
-import CompanyLogoMarquee from '../../components/CompanyLogoMarquee'
-import { SkillCard } from '../../components/Cards'
-import { ProfileCard } from '../../components/ProfileCard'
+} from '../assets/dummy-data'
+import CompanyLogoMarquee from '../components/CompanyLogoMarquee'
+import { SkillCard } from '../components/Cards'
+import { ProfileCard } from '../components/ProfileCard'
 
 const aboutPreview = aboutPreviewContent[0]
 const profileContent = profileCardContent[0]

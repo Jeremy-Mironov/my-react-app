@@ -1,13 +1,13 @@
 import { contactPageContent } from '../assets/dummy-data'
-import { ContactMainSection } from '../sections/contact'
-import { HeroSection } from '../sections/shared/HeroSection'
+import { ContactMainSection } from '../sections/ContactMainSection'
+import { SharedHeroSection } from '../sections/SharedHeroSection'
 
 const contactHeader = contactPageContent[0]
 
 export default function Contact() {
     return (
         <>
-            <HeroSection
+            <SharedHeroSection
                 badge={contactHeader.badge}
                 heading={contactHeader.heading}
                 breadcrumbItems={[{ label: 'Contact' }]}

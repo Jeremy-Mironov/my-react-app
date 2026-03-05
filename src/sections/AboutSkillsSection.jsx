@@ -1,5 +1,5 @@
-import { skillGroups, aboutPageHeader } from '../../assets/dummy-data'
-import { SkillCard } from '../../components/Cards'
+import { skillGroups, aboutPageHeader } from '../assets/dummy-data'
+import { SkillCard } from '../components/Cards'
 
 const aboutHeader = aboutPageHeader[0]
 

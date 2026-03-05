@@ -1,13 +1,13 @@
 import { aboutPageHeader } from '../assets/dummy-data'
-import { AboutSkillsSection } from '../sections/about'
-import { HeroSection } from '../sections/shared/HeroSection'
+import { AboutSkillsSection } from '../sections/AboutSkillsSection'
+import { SharedHeroSection } from '../sections/SharedHeroSection'
 
 const aboutHeader = aboutPageHeader[0]
 
 export default function About() {
     return (
         <>
-            <HeroSection
+            <SharedHeroSection
                 badge={aboutHeader.badge}
                 heading={aboutHeader.heading}
                 breadcrumbItems={[{ label: 'About' }]}

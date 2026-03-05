@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { homeServices, homeServicesHeader } from '../../assets/dummy-data'
+import { homeServices, homeServicesHeader } from '../assets/dummy-data'
 
 const servicesHeader = homeServicesHeader[0]
 

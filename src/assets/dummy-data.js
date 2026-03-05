@@ -152,7 +152,7 @@ export const homeServices = [
 export const aboutPageHeader = [
     {
         badge: 'About',
-        heading: 'Building modern websites with design, development, and SEO that drive real results.',
+        heading: 'About',
         sectionTitle: 'Background, skills, and experience',
         description:
             'I combine development, design, and marketing thinking to deliver websites that are both visually strong and results-focused. I have hands-on experience in SEO optimization, freelance design, social media and digital presence, and helping small businesses with web + branding.',
@@ -162,7 +162,7 @@ export const aboutPageHeader = [
 export const portfolioPageHeader = [
     {
         badge: 'Portfolio / Projects',
-        heading: 'My best work',
+        heading: 'My Portfolio',
         description:
             'Selected projects that show my approach to web development, visual design, and measurable online growth.',
     },
@@ -171,7 +171,7 @@ export const portfolioPageHeader = [
 export const contactPageContent = [
     {
         badge: 'Contact',
-        heading: 'Let’s work together',
+        heading: 'Contact Me',
         description:
             'Send a message with your project goals, timeline, and business type. I’ll reply with a practical plan for your website and digital growth.',
         labels: ['Name', 'Email', 'Message'],

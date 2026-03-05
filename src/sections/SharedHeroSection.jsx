@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export function HeroSection({ badge, heading, breadcrumbItems = [] }) {
+export function SharedHeroSection({ badge, heading, breadcrumbItems = [] }) {
     const items = breadcrumbItems.length > 0 ? breadcrumbItems : [{ label: badge }]
 
     return (

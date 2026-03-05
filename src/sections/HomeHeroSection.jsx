@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
-import { homeHeroContent, homeHeroCtas, homeStepperContent, homeWhatIDo } from '../../assets/dummy-data'
-import { Step, Stepper } from '../../components/Stepper'
+import { homeHeroContent, homeHeroCtas, homeStepperContent, homeWhatIDo } from '../assets/dummy-data'
+import { Step, Stepper } from '../components/Stepper'
 
 const heroContent = homeHeroContent[0]
 
-export function HeroSection() {
+export function HomeHeroSection() {
     return (
         <>
             <style>{`
@@ -38,7 +38,7 @@ export function HeroSection() {
             >
                 <div className=" relative z-10 mx-auto grid w-full max-w-6xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-20   ">
                     <div
-                        className=' bg-slate-900/80 rounded-2xl border border-slate-800 p-6 sm:p-8'>
+                        className='bg-slate-900/80 rounded-2xl border border-slate-800 p-6 sm:p-8 lg:col-start-2'>
                         <p className="text-sm font-semibold uppercase tracking-wider text-slate-400">{heroContent.badge}</p>
                         <h1 id="hero-heading" className="mt-3 text-4xl font-bold leading-tight sm:text-5xl">
                             {heroContent.heading}

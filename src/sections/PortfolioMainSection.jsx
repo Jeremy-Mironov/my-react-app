@@ -1,5 +1,5 @@
-import { portfolioPageHeader, projects } from '../../assets/dummy-data'
-import { ProjectCard } from '../../components/Cards'
+import { portfolioPageHeader, projects } from '../assets/dummy-data'
+import { ProjectCard } from '../components/Cards'
 
 const portfolioHeader = portfolioPageHeader[0]
 

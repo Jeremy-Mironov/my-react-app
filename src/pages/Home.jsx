@@ -1,9 +1,11 @@
-import { AboutPreviewSection, HeroSection, ServicesSection } from '../sections/home'
+import { AboutPreviewSection } from '../sections/AboutPreviewSection'
+import { HomeHeroSection } from '../sections/HomeHeroSection'
+import { ServicesSection } from '../sections/ServicesSection'
 
 export default function Home() {
     return (
         <>
-            <HeroSection />
+            <HomeHeroSection />
             <AboutPreviewSection />
             <ServicesSection />
         </>
