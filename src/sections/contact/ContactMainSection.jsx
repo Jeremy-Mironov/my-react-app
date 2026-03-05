@@ -5,9 +5,7 @@ const contactContent = contactPageContent[0]
 export function ContactMainSection() {
     return (
         <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-            <p className="inline-flex rounded-full border border-blue-500/40 bg-blue-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-300">{contactContent.badge}</p>
-            <h2 className="mt-2 text-3xl font-bold sm:text-4xl">{contactContent.heading}</h2>
-            <p className="mt-5 max-w-3xl text-base leading-7 text-slate-300">
+            <p className="max-w-3xl text-base leading-7 text-slate-300">
                 {contactContent.description}
             </p>
 

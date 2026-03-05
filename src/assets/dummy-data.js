@@ -69,16 +69,6 @@ export const homeStepperContent = [
 
 export const homeWhatIDo = ['What I do', 'Step through my core services.', 'Next']
 
-export const logoLoopItems = [
-    { name: 'WordPress', icon: 'https://cdn.simpleicons.org/wordpress/ffffff' },
-    { name: 'Git', icon: 'https://cdn.simpleicons.org/git/ffffff' },
-    { name: 'GitHub', icon: 'https://cdn.simpleicons.org/github/ffffff' },
-    { name: 'Figma', icon: 'https://cdn.simpleicons.org/figma/ffffff' },
-    { name: 'HTML5', icon: 'https://cdn.simpleicons.org/html5/ffffff' },
-    { name: 'JavaScript', icon: 'https://cdn.simpleicons.org/javascript/ffffff' },
-    { name: 'PHP', icon: 'https://cdn.simpleicons.org/php/ffffff' },
-]
-
 export const aboutPreviewContent = [
     {
         heading: 'About Me',

@@ -1,11 +1,8 @@
 import LiquidEther from '../../components/LiquidEther'
-import { aboutPageHeader } from '../../assets/dummy-data'
 
-const aboutHeader = aboutPageHeader[0]
-
-export function AboutHeroSection() {
+export function HeroSection({ badge, heading }) {
     return (
-        <section className="relative isolate overflow-hidden border-b border-slate-800 bg-slate-900/60">
+        <section className="relative isolate overflow-hidden border-b border-slate-800">
             <div className="absolute inset-0 z-0" aria-hidden="true">
                 <LiquidEther
                     colors={['#5227FF', '#FF9FFC', '#B19EEF']}
@@ -30,9 +27,11 @@ export function AboutHeroSection() {
             </div>
 
             <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-                <p className="inline-flex rounded-full border border-blue-500/40 bg-blue-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-300">{aboutHeader.badge}</p>
+                <p className="inline-flex rounded-full border border-blue-500/40 bg-blue-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-300">
+                    {badge}
+                </p>
                 <h1 className="mt-3 max-w-4xl text-4xl font-bold leading-tight text-slate-100 sm:text-5xl">
-                    {aboutHeader.heading}
+                    {heading}
                 </h1>
             </div>
         </section>
