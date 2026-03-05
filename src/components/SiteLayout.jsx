@@ -51,9 +51,6 @@ export function SiteLayout() {
                                     <stop offset="1" stop-color="#46E7FF" />
                                 </linearGradient>
                             </defs>
-
-                            <rect width="256" height="200" fill="#020816" />
-
                             <path
                                 d="M76 34V132C76 150 63 162 46 162H40"
                                 stroke="url(#jGrad)"
