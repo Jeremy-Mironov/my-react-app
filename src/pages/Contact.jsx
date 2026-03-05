@@ -7,7 +7,11 @@ const contactHeader = contactPageContent[0]
 export default function Contact() {
     return (
         <>
-            <HeroSection badge={contactHeader.badge} heading={contactHeader.heading} />
+            <HeroSection
+                badge={contactHeader.badge}
+                heading={contactHeader.heading}
+                breadcrumbItems={[{ label: 'Contact' }]}
+            />
             <ContactMainSection />
         </>
     )

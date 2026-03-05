@@ -247,21 +247,33 @@ export const skillGroups = [
 
 export const projects = [
     {
-        title: 'Small Business Website + Branding',
+        title: 'Evergreen Renewal Services Website',
         description:
-            'Built a responsive website with clear conversion paths, visual identity updates, and a client-focused structure for local business growth.',
-        stack: ['React', 'Tailwind CSS', 'Figma', 'Branding'],
+            'Built a conversion-focused remodeling website with service-specific pages, trust-building content, and local SEO structure to attract qualified homeowners in target service areas.',
+        stack: ['WordPress', 'Local SEO', 'UX Writing', 'Lead Generation'],
     },
     {
-        title: 'SEO Growth Project',
+        title: 'FreshFit Bath & Shower Brand + Landing Pages',
         description:
-            'Improved on-page SEO, keyword targeting, and analytics tracking to increase organic visibility and search performance.',
-        stack: ['Keyword Research', 'Google Analytics', 'SEMrush', 'Ahrefs'],
+            'Created a clean bathroom remodeling brand presence with focused landing pages, strong service messaging, and lead capture paths designed for bath and shower renovation inquiries.',
+        stack: ['Branding', 'Landing Pages', 'Conversion Design', 'Remodeling'],
     },
     {
-        title: 'Portfolio Website Delivery',
+        title: 'Acre Maker NW Website',
         description:
-            'Designed and launched a clean portfolio site with project storytelling, responsive layouts, and integrated contact forms.',
-        stack: ['HTML', 'CSS', 'JavaScript', 'WordPress'],
+            'Built a service-driven website for land clearing and site work with clear offer segmentation, location-based content, and quote-focused CTAs for local lead generation.',
+        stack: ['WordPress', 'Local SEO', 'Service Pages', 'Lead Forms'],
+    },
+    {
+        title: 'Revival Collision Center Website',
+        description:
+            'Developed a customer-first auto body website with clear repair service flows, insurance-friendly messaging, and trust signals designed to convert local search traffic into calls and estimates.',
+        stack: ['Website Strategy', 'Local SEO', 'Branding', 'UX Copy'],
+    },
+    {
+        title: 'JMironov Studio Portfolio',
+        description:
+            'Designed a personal portfolio and service site to showcase web design, branding, and marketing work with a clean structure, clear positioning, and easy client contact paths.',
+        stack: ['React', 'Tailwind CSS', 'Portfolio', 'Brand Design'],
     },
 ]

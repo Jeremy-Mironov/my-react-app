@@ -7,7 +7,11 @@ const portfolioHeader = portfolioPageHeader[0]
 export default function Portfolio() {
     return (
         <>
-            <HeroSection badge={portfolioHeader.badge} heading={portfolioHeader.heading} />
+            <HeroSection
+                badge={portfolioHeader.badge}
+                heading={portfolioHeader.heading}
+                breadcrumbItems={[{ label: 'Portfolio' }]}
+            />
             <PortfolioCardSwapSection />
             <PortfolioMainSection />
 

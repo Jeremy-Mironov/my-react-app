@@ -15,7 +15,7 @@ export function SkillCard({ title, items }) {
 
 export function ProjectCard({ title, description, stack }) {
     return (
-        <article className="group rounded-2xl border border-slate-700/70 bg-slate-900/65 p-6 shadow-[0_10px_40px_rgba(2,6,23,0.35)] transition hover:-translate-y-0.5 hover:border-blue-500/45 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.18),0_16px_45px_rgba(2,6,23,0.5)]">
+        <article className="group rounded-2xl border border-slate-700/70 bg-slate-900/100 p-6 shadow-[0_10px_40px_rgba(2,6,23,0.35)] transition hover:-translate-y-0.5 hover:border-blue-500/45 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.18),0_16px_45px_rgba(2,6,23,0.5)]">
             <h3 className="text-lg font-semibold text-slate-100">{title}</h3>
             <p className="mt-3 text-sm leading-6 text-slate-300">{description}</p>
             <ul className="mt-4 flex flex-wrap gap-2">

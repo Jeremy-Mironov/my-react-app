@@ -7,7 +7,11 @@ const aboutHeader = aboutPageHeader[0]
 export default function About() {
     return (
         <>
-            <HeroSection badge={aboutHeader.badge} heading={aboutHeader.heading} />
+            <HeroSection
+                badge={aboutHeader.badge}
+                heading={aboutHeader.heading}
+                breadcrumbItems={[{ label: 'About' }]}
+            />
 
             <AboutSkillsSection />
         </>

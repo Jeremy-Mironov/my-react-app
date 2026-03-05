@@ -34,10 +34,11 @@ export function HeroSection() {
             <section
                 id="hero"
                 aria-labelledby="hero-heading"
-                className="relative isolate flex min-h-[calc(100vh-65px)] items-center overflow-hidden border-b border-slate-800 bg-slate-900/60"
+                className="relative isolate flex min-h-[calc(100vh-65px)] items-center overflow-hidden border-b border-slate-800 "
             >
-                <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-20">
-                    <div>
+                <div className=" relative z-10 mx-auto grid w-full max-w-6xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-20   ">
+                    <div
+                        className=' bg-slate-900/80 rounded-2xl border border-slate-800 p-6 sm:p-8'>
                         <p className="text-sm font-semibold uppercase tracking-wider text-slate-400">{heroContent.badge}</p>
                         <h1 id="hero-heading" className="mt-3 text-4xl font-bold leading-tight sm:text-5xl">
                             {heroContent.heading}
@@ -62,29 +63,9 @@ export function HeroSection() {
                             </Link>
                         </div>
                     </div>
-                    <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 sm:p-8">
-                        <h2 className="text-lg font-semibold text-slate-100">{homeWhatIDo[0]}</h2>
-                        <p className="mt-2 text-sm text-slate-400">{homeWhatIDo[1]}</p>
 
-                        <div className="mt-4">
-                            <Stepper initialStep={1} nextButtonText={homeWhatIDo[2]}>
-                                {homeStepperContent.map((step) => (
-                                    <Step key={step.title}>
-                                        <div>
-                                            <h3 className="text-sm font-semibold text-slate-100">{step.title}</h3>
-                                            <ul className="mt-2 list-disc pl-5 text-sm text-slate-300">
-                                                {step.items.map((item) => (
-                                                    <li key={`${step.title}-${item}`}>{item}</li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    </Step>
-                                ))}
-                            </Stepper>
-                        </div>
-                    </div>
                 </div>
-            </section>
+            </section >
         </>
     )
 }
