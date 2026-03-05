@@ -15,15 +15,15 @@ export function AboutPreviewSection() {
     const navigate = useNavigate()
 
     return (
-        <section className="border-b border-slate-800 bg-slate-950/100">
-            <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:px-8 iten">
+        <section className="overflow-x-hidden border-b border-slate-800 bg-slate-950">
+            <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:px-8">
                 <div className="flex flex-col justify-center">
                     <h2 className="text-2xl font-bold text-slate-100 sm:text-3xl">{aboutPreview.heading}</h2>
                     <p className="mt-4 max-w-3xl text-base leading-7 text-slate-300">
                         {aboutPreview.description}
                     </p>
 
-                    <div className="mt-8 max-w-3xl">
+                    <div className="mt-8 w-full max-w-3xl overflow-hidden">
                         <CompanyLogoMarquee />
                     </div>
 
@@ -40,18 +40,20 @@ export function AboutPreviewSection() {
                     </Link>
                 </div>
 
-                <ProfileCard
-                    className="max-w-[260px] lg:justify-self-end"
-                    avatarUrl="/img/profile.png"
-                    name={profileContent.name}
-                    title={profileContent.title}
-                    handle={profileContent.handle}
-                    status={profileContent.status}
-                    contactText={profileContent.contactText}
-                    onContactClick={() => {
-                        navigate('/contact')
-                    }}
-                />
+                <div className="overflow-x-clip lg:overflow-visible">
+                    <ProfileCard
+                        className="mx-auto w-full max-w-65 lg:mx-0 lg:justify-self-end"
+                        avatarUrl="/img/profile.png"
+                        name={profileContent.name}
+                        title={profileContent.title}
+                        handle={profileContent.handle}
+                        status={profileContent.status}
+                        contactText={profileContent.contactText}
+                        onContactClick={() => {
+                            navigate('/contact')
+                        }}
+                    />
+                </div>
             </div>
         </section>
     )

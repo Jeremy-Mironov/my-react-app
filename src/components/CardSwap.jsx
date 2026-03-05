@@ -197,7 +197,11 @@ const CardSwap = ({
             ? cloneElement(child, {
                 key: index,
                 ref: refs[index],
-                style: { width, height, ...(child.props.style ?? {}) },
+                style: {
+                    width: typeof width === 'number' ? `min(${width}px, 600px)` : width,
+                    height,
+                    ...(child.props.style ?? {}),
+                },
                 onClick: (event) => {
                     child.props.onClick?.(event)
                     onCardClick?.(index)
@@ -213,7 +217,10 @@ const CardSwap = ({
                 ? 'absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform overflow-visible perspective-[900px] max-[768px]:scale-[0.8] max-[480px]:scale-[0.6]'
                 : 'absolute right-0 bottom-0 origin-bottom-right translate-x-[5%] translate-y-[20%] transform overflow-visible perspective-[900px] max-[768px]:translate-x-[25%] max-[768px]:translate-y-[25%] max-[768px]:scale-[0.75] max-[480px]:translate-x-[25%] max-[480px]:translate-y-[25%] max-[480px]:scale-[0.55]'
                 }`}
-            style={{ width, height }}
+            style={{
+                width,
+                height,
+            }}
         >
             {renderedCards}
         </div>

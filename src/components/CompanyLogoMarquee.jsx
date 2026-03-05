@@ -1,5 +1,5 @@
 export default function CompanyLogoMarquee() {
-    const toolIcons = ['python', 'javascript', 'react', 'django', 'typescript', 'git', 'docker', 'C#', 'Figma']
+    const toolIcons = ['python', 'javascript', 'react', 'django', 'typescript', 'git', 'docker', 'figma']
 
     return (
         <>
@@ -19,19 +19,17 @@ export default function CompanyLogoMarquee() {
                 }
             `}</style>
 
-            <div className="relative mx-auto w-full max-w-5xl select-none overflow-hidden">
-                <div className="marquee-inner flex min-w-[200%] will-change-transform" style={{ animationDuration: '15s' }}>
-                    <div className="flex">
-                        {[...toolIcons, ...toolIcons].map((tool, index) => (
-                            <img
-                                key={index}
-                                src={`https://cdn.simpleicons.org/${tool}/ffffff`}
-                                alt={tool}
-                                className="mx-6 h-5 w-5 object-contain"
-                                draggable={false}
-                            />
-                        ))}
-                    </div>
+            <div className="relative mx-auto w-full max-w-75 select-none overflow-hidden px-1 sm:max-w-5xl sm:px-0">
+                <div className="marquee-inner inline-flex w-max whitespace-nowrap will-change-transform" style={{ animationDuration: '15s' }}>
+                    {[...toolIcons, ...toolIcons].map((tool, index) => (
+                        <img
+                            key={index}
+                            src={`https://cdn.simpleicons.org/${tool}/ffffff`}
+                            alt={tool}
+                            className="mx-3 h-4 w-4 object-contain sm:mx-6 sm:h-5 sm:w-5"
+                            draggable={false}
+                        />
+                    ))}
                 </div>
             </div>
         </>
