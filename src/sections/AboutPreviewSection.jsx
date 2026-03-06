@@ -1,21 +1,16 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import {
     aboutPreviewContent,
     aboutPreviewStats,
-    profileCardContent,
 } from '../assets/dummy-data'
 import CompanyLogoMarquee from '../components/CompanyLogoMarquee'
 import { SkillCard } from '../components/Cards'
-import { ProfileCard } from '../components/ProfileCard'
 
 const aboutPreview = aboutPreviewContent[0]
-const profileContent = profileCardContent[0]
 
 export function AboutPreviewSection() {
-    const navigate = useNavigate()
-
     return (
-        <section className="overflow-x-hidden border-b border-slate-800 bg-slate-950">
+        <section id="about-preview" className="overflow-x-hidden border-b border-slate-800 bg-slate-950">
             <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:px-8">
                 <div className="flex flex-col justify-center">
                     <h2 className="text-2xl font-bold text-slate-100 sm:text-3xl">{aboutPreview.heading}</h2>
@@ -40,21 +35,9 @@ export function AboutPreviewSection() {
                     </Link>
                 </div>
 
-                <div className="overflow-x-clip lg:overflow-visible">
-                    <ProfileCard
-                        className="mx-auto w-full max-w-65 lg:mx-0 lg:justify-self-end"
-                        avatarUrl="/img/profile.png"
-                        name={profileContent.name}
-                        title={profileContent.title}
-                        handle={profileContent.handle}
-                        status={profileContent.status}
-                        contactText={profileContent.contactText}
-                        onContactClick={() => {
-                            navigate('/contact')
-                        }}
-                    />
-                </div>
+                <div id="about-mobile-slot" aria-hidden="true" className="h-[400px] lg:h-auto" />
             </div>
+
         </section>
     )
 }

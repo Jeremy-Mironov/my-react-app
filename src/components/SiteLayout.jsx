@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { footerContacts, footerTemplate, layoutCta, layoutNavLinks } from '../assets/dummy-data'
 import FloatingLines from './FloatingLines'
-
 function navLinkClass({ isActive }) {
     return `px-4 py-2 ${isActive
         ? 'bg-blue-500/15 text-blue-500 border border-blue-500/40 font-medium rounded-full'
@@ -28,7 +27,6 @@ export function SiteLayout() {
                     mixBlendMode="normal"
                 />
             </div>
-
 
             <header className="fixed top-0 left-0 z-50 w-full ">
                 <nav className="bg-slate-950/55 backdrop-blur-xl mx-auto my-2 flex w-full max-w-4xl items-center justify-between rounded-full border border-slate-700/70 px-4 py-2.5 text-white shadow-[0_0_0_1px_rgba(37,99,235,0.08),0_10px_35px_rgba(2,6,23,0.45)]">

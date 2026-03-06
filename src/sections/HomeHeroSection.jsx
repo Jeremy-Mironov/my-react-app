@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
-import { homeHeroContent, homeHeroCtas, homeStepperContent, homeWhatIDo } from '../assets/dummy-data'
-import { Step, Stepper } from '../components/Stepper'
+import { homeHeroContent, homeHeroCtas } from '../assets/dummy-data'
 
 const heroContent = homeHeroContent[0]
 
@@ -63,6 +62,8 @@ export function HomeHeroSection() {
                             </Link>
                         </div>
                     </div>
+
+                    <div id="hero-mobile-slot" aria-hidden="true" className="h-[400px] lg:hidden" />
 
                 </div>
             </section >
