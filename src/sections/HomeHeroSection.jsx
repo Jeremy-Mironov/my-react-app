@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { homeHeroContent, homeHeroCtas } from '../assets/dummy-data'
+import GradientText from '../components/GradientText'
 
 const heroContent = homeHeroContent[0]
 
@@ -33,19 +34,27 @@ export function HomeHeroSection() {
             <section
                 id="hero"
                 aria-labelledby="hero-heading"
-                className="relative isolate flex min-h-[calc(100vh-65px)] items-center overflow-hidden border-b border-slate-800 "
+                className="relative isolate flex min-h-[calc(100vh)] items-center overflow-hidden border-b border-slate-800 "
             >
-                <div className=" relative z-10 mx-auto grid w-full max-w-6xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-20   ">
+                <div className="align-middle justify-center relative z-10 mx-auto grid w-full max-w-6xl gap-8 px-4 py-16 sm:px-6 ">
+
+
                     <div
-                        className='bg-slate-900/80 rounded-2xl border border-slate-800 p-6 sm:p-8 lg:col-start-2'>
-                        <p className="text-sm font-semibold uppercase tracking-wider text-slate-400">{heroContent.badge}</p>
+                        className='backdrop-blur-xl text-center rounded-2xl p-6 sm:p-8 lg:col-start-2'>
                         <h1 id="hero-heading" className="mt-3 text-4xl font-bold leading-tight sm:text-5xl">
-                            {heroContent.heading}
+                            <GradientText
+                                colors={["#3e9bff", "#9bc5ed", "#0048ff"]}
+                                animationSpeed={3.5}
+                                showBorder={false}
+                                className="custom-class"
+                            >
+                                {heroContent.heading}
+                            </GradientText>
                         </h1>
                         <p className="mt-5 text-base leading-7 text-slate-300">
                             {heroContent.description}
                         </p>
-                        <div className="mt-8 flex flex-wrap gap-3">
+                        <div className="mt-8 flex flex-wrap gap-3 align-middle justify-evenly">
                             <div className="rainbow relative z-0 flex items-center justify-center overflow-hidden rounded-full p-0.5 transition duration-300 hover:scale-105 active:scale-100">
                                 <Link
                                     to={homeHeroCtas[0].to}

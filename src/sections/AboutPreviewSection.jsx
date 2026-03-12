@@ -2,11 +2,14 @@ import { Link } from 'react-router-dom'
 import {
     aboutPreviewContent,
     aboutPreviewStats,
+    profileCardContent,
 } from '../assets/dummy-data'
 import CompanyLogoMarquee from '../components/CompanyLogoMarquee'
+import { ProfileCard } from '../components/ProfileCard'
 import { SkillCard } from '../components/Cards'
 
 const aboutPreview = aboutPreviewContent[0]
+const profileCard = profileCardContent[0]
 
 export function AboutPreviewSection() {
     return (
@@ -35,7 +38,17 @@ export function AboutPreviewSection() {
                     </Link>
                 </div>
 
-                <div id="about-mobile-slot" aria-hidden="true" className="h-[400px] lg:h-auto" />
+                <div id="about-mobile-slot" className="flex h-[400px] items-center justify-center lg:h-auto">
+                    <ProfileCard
+                        className="w-full max-w-sm"
+                        avatarUrl="/img/profile.png"
+                        name={profileCard.name}
+                        title={profileCard.title}
+                        handle={profileCard.handle}
+                        status={profileCard.status}
+                        contactText={profileCard.contactText}
+                    />
+                </div>
             </div>
 
         </section>

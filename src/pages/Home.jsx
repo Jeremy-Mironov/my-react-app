@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { AboutPreviewSection } from '../sections/AboutPreviewSection'
 import Scene3D from '../components/Scene3D'
+import { CtaSection } from '../sections/CtaSection'
 import { HomeHeroSection } from '../sections/HomeHeroSection'
 import { ServicesSection } from '../sections/ServicesSection'
+import { TestimonialsSection } from '../sections/TestimonialsSection'
 
 export default function Home() {
     const [sceneSide, setSceneSide] = useState('left')
@@ -148,19 +150,12 @@ export default function Home() {
 
     return (
         <>
-            <div
-                ref={sceneWrapperRef}
-                className={`pointer-events-none fixed left-1/2 z-40 w-[min(92vw,560px)] -translate-x-1/2 -translate-y-1/2 transition-transform duration-400 ease-out md:w-[min(70vw,720px)] ${sceneSide === 'right' ? 'lg:translate-x-[calc(-50%+400px)]' : 'lg:translate-x-[calc(-50%-400px)]'
-                    }`}
-                style={{ top: '50%' }}
-            >
-                <div className="h-[min(60vh,420px)] overflow-hidden rounded-xl md:h-[min(70vh,560px)]">
-                    <Scene3D variant={sceneSide === 'right' ? 'about' : 'home'} />
-                </div>
-            </div>
+
             <HomeHeroSection />
             <AboutPreviewSection />
+            <CtaSection />
             <ServicesSection />
+            <TestimonialsSection />
         </>
     )
 }

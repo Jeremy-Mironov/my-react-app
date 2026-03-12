@@ -1,40 +1,39 @@
 import { Link } from 'react-router-dom'
-import { homeServices, homeServicesHeader } from '../assets/dummy-data'
-
-const servicesHeader = homeServicesHeader[0]
+import { servicesFeatureSection } from '../assets/dummy-data'
 
 export function ServicesSection() {
     return (
-        <section className="border-b border-slate-800 bg-slate-900/40">
-            <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-                <div className="mb-12">
-                    <h2 className="text-3xl font-bold text-slate-100 sm:text-4xl">{servicesHeader.heading}</h2>
-                    <p className="mt-3 max-w-2xl text-base text-slate-400">
-                        {servicesHeader.description}
+        <section id="services" className="border-b border-slate-800 bg-slate-950/100 py-8 sm:py-16 lg:py-24">
+            <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div className="mb-12 space-y-4 sm:mb-16 lg:mb-24">
+                    <h2 className="text-2xl font-semibold text-slate-100 md:text-3xl lg:text-4xl">
+                        {servicesFeatureSection.heading}
+                    </h2>
+                    <p className="max-w-4xl text-lg text-slate-300 sm:text-xl">
+                        {servicesFeatureSection.description}
                     </p>
+                    <div className="flex items-center gap-1.5">
+                        <Link
+                            to={servicesFeatureSection.cta.to}
+                            className="text-lg font-medium text-blue-400 transition hover:text-blue-300"
+                        >
+                            {servicesFeatureSection.cta.label}
+                        </Link>
+                        <span className="text-blue-400">→</span>
+                    </div>
                 </div>
 
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                    {homeServices.map((service, index) => (
-                        <div key={service.title} className="group rounded-lg border border-slate-800 bg-slate-900/60 overflow-hidden transition hover:border-slate-700 hover:bg-slate-900/80 flex flex-col">
-                            <div className={`h-40 ${index === 0
-                                ? 'bg-linear-to-br from-blue-500/20 to-cyan-500/20'
-                                : index === 1
-                                    ? 'bg-linear-to-br from-purple-500/20 to-pink-500/20'
-                                    : index === 2
-                                        ? 'bg-linear-to-br from-orange-500/20 to-red-500/20'
-                                        : 'bg-linear-to-br from-green-500/20 to-emerald-500/20'} flex items-center justify-center overflow-hidden`}>
-                                <img src={service.imageSrc} alt={service.imageAlt} className="w-full h-full object-cover group-hover:scale-105 transition" />
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 backdrop-blur-xl">
+                    {servicesFeatureSection.cards.map((card) => (
+                        <div
+                            key={card.title}
+                            className={`rounded-2xl border bg-slate-900/70 p-6 shadow-none transition-colors duration-300 ${card.accent}`}
+                        >
+                            <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-full text-2xl">
+                                <span aria-hidden="true">{card.icon}</span>
                             </div>
-                            <div className="p-6 flex flex-col flex-1">
-                                <h3 className="text-lg font-semibold text-slate-100">{service.title}</h3>
-                                <p className="mt-2 text-sm text-slate-400 flex-1">
-                                    {service.description}
-                                </p>
-                                <Link to={service.linkTo} className="mt-4 inline-flex items-center text-sm font-semibold text-blue-500 hover:text-blue-400 transition">
-                                    {service.linkLabel} <span className="ml-2">→</span>
-                                </Link>
-                            </div>
+                            <h3 className="text-lg font-semibold text-slate-100">{card.title}</h3>
+                            <p className="mt-2 text-slate-300/90">{card.description}</p>
                         </div>
                     ))}
                 </div>

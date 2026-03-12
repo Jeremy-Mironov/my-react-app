@@ -17,7 +17,7 @@ export const footerTemplate = ['Web & SEO Specialist. All rights reserved.']
 export const homeHeroContent = [
     {
         badge: 'Hero',
-        heading: 'I build modern websites and drive growth with SEO.',
+        heading: 'Modern Websites for Real Business Results',
         description:
             'I create websites that look professional, work smoothly on every device, and help businesses turn visitors into real leads. My strongest area is SEO, supported by practical web, design, and client-focused delivery skills.',
     },
@@ -94,6 +94,14 @@ export const aboutPreviewStats = [
     },
 ]
 
+export const homeCtaSection = {
+    heading: 'Ready to build something great?',
+    description:
+        'Let’s turn your idea into a modern website that looks professional, works smoothly, and helps you grow online.',
+    primary: { to: '/contact', label: 'Start a Project' },
+    secondary: { to: '/portfolio', label: 'See My Work' },
+}
+
 export const profileCardContent = [
     {
         name: 'Jeremy Mironov',
@@ -112,42 +120,91 @@ export const homeServicesHeader = [
     },
 ]
 
-export const homeServices = [
-    {
-        title: 'Web Development',
-        description: 'Build responsive websites with modern technologies. HTML, CSS, JavaScript, and PHP.',
-        imageAlt: 'Web Development',
-        imageSrc: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop',
-        linkTo: '/portfolio',
-        linkLabel: 'Read More',
+
+
+export const servicesFeatureSection = {
+    heading: "My Services",
+    description:
+        'Here are some of the ways I can help. I enjoy working on projects that combine design, functionality, and clear business goals.',
+    cta: {
+        to: '/portfolio',
+        label: 'See All Services',
     },
-    {
-        title: 'WordPress',
-        description:
-            'Build and maintain WordPress sites. Content updates, customization, and plugin management.',
-        imageAlt: 'WordPress',
-        imageSrc: 'https://images.unsplash.com/photo-1563070905-8f9d187d0d57?w=400&h=300&fit=crop',
-        linkTo: '/portfolio',
-        linkLabel: 'Read More',
-    },
-    {
-        title: 'Design & Branding',
-        description:
-            'Create logos, graphics, and branding materials. Figma, Canva, and Photoshop expertise.',
-        imageAlt: 'Design & Branding',
-        imageSrc: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop',
-        linkTo: '/portfolio',
-        linkLabel: 'Read More',
-    },
-    {
-        title: 'SEO & Technical',
-        description: 'Improve search visibility, fix technical issues, and optimize for performance.',
-        imageAlt: 'SEO & Technical',
-        imageSrc: 'https://images.unsplash.com/photo-1554224311-beee415c15b7?w=400&h=300&fit=crop',
-        linkTo: '/about',
-        linkLabel: 'Read More',
-    },
-]
+    cards: [
+        {
+            title: 'Web Design',
+            description:
+                "I design clean, modern, and user-friendly websites that are easy to navigate and visually consistent with your brand.",
+            accent: 'text-violet-300 bg-violet-500/10 border-violet-500/30 hover:border-violet-400',
+            icon: '🖥️',
+        },
+        {
+            title: 'Branding & Visual Design',
+            description:
+                'I create logos, graphics, and branding materials that reflect your unique identity and values.',
+            accent: 'text-emerald-300 bg-emerald-500/10 border-emerald-500/30 hover:border-emerald-400',
+            icon: '🎨',
+        },
+        {
+            title: 'Creative Digital Support',
+            description:
+                'Some projects need more than just a website. I also help with digital materials and creative tasks that support marketing and presentation.',
+            accent: 'text-amber-300 bg-amber-500/10 border-amber-500/30 hover:border-amber-400',
+            icon: '🛠️',
+        },
+        {
+            title: 'Advertising',
+            description:
+                'I help create digital advertising materials that are clear, eye-catching, and focused on real business goals.',
+            accent: 'text-rose-300 bg-rose-500/10 border-rose-500/30 hover:border-rose-400',
+            icon: '📣',
+        },
+        {
+            title: 'Content Creation',
+            description:
+                'I create content that helps businesses present their services in a clear, professional, and engaging way.',
+            accent: 'text-sky-300 bg-sky-500/10 border-sky-500/30 hover:border-sky-400',
+            icon: '✍️',
+        },
+        {
+            title: 'Mobile Development',
+            description:
+                'I help create mobile app ideas and interfaces for projects that need a clean, practical, and user-friendly experience.',
+            accent: 'text-fuchsia-300 bg-fuchsia-500/10 border-fuchsia-500/30 hover:border-fuchsia-400',
+            icon: '📱',
+        },
+    ],
+}
+
+export const testimonialsSection = {
+    badge: 'Testimonials',
+    heading: "Don't just take our words",
+    description:
+        "Hear what our users say about us. We're always looking for ways to improve. If you have a positive experience with us, leave a review.",
+    items: [
+        {
+            name: 'Sarah Mitchell',
+            role: 'Small Business Owner',
+            quote:
+                'The website redesign made our business look significantly more professional, and we started getting better quality leads within weeks.',
+            image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop',
+        },
+        {
+            name: 'Daniel Brooks',
+            role: 'Marketing Manager',
+            quote:
+                'Great communication, fast updates, and strong design instincts. The final result matched our brand and performed better than our previous site.',
+            image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&h=200&auto=format&fit=crop',
+        },
+        {
+            name: 'Nina Alvarez',
+            role: 'Startup Founder',
+            quote:
+                'From layout to SEO details, everything was handled with care. The project was delivered on time and exceeded our expectations.',
+            image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&h=200&auto=format&fit=crop&q=60',
+        },
+    ],
+}
 
 export const aboutPageHeader = [
     {
@@ -167,6 +224,8 @@ export const portfolioPageHeader = [
             'Selected projects that show my approach to web development, visual design, and measurable online growth.',
     },
 ]
+
+export const portfolioMainSectionH2 = 'Projects That Combine Design, Function, and Creative Thinking'
 
 export const contactPageContent = [
     {
@@ -251,29 +310,39 @@ export const projects = [
         description:
             'Built a conversion-focused remodeling website with service-specific pages, trust-building content, and local SEO structure to attract qualified homeowners in target service areas.',
         stack: ['WordPress', 'Local SEO', 'UX Writing', 'Lead Generation'],
+        imageSrc: 'https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=800&h=500&fit=crop',
+        imageAlt: 'Evergreen Renewal Services website preview',
     },
     {
         title: 'FreshFit Bath & Shower Brand + Landing Pages',
         description:
             'Created a clean bathroom remodeling brand presence with focused landing pages, strong service messaging, and lead capture paths designed for bath and shower renovation inquiries.',
         stack: ['Branding', 'Landing Pages', 'Conversion Design', 'Remodeling'],
+        imageSrc: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&h=500&fit=crop',
+        imageAlt: 'FreshFit Bath and Shower landing page preview',
     },
     {
         title: 'Acre Maker NW Website',
         description:
             'Built a service-driven website for land clearing and site work with clear offer segmentation, location-based content, and quote-focused CTAs for local lead generation.',
         stack: ['WordPress', 'Local SEO', 'Service Pages', 'Lead Forms'],
+        imageSrc: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&h=500&fit=crop',
+        imageAlt: 'Acre Maker NW project preview',
     },
     {
         title: 'Revival Collision Center Website',
         description:
             'Developed a customer-first auto body website with clear repair service flows, insurance-friendly messaging, and trust signals designed to convert local search traffic into calls and estimates.',
         stack: ['Website Strategy', 'Local SEO', 'Branding', 'UX Copy'],
+        imageSrc: 'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=800&h=500&fit=crop',
+        imageAlt: 'Revival Collision Center website preview',
     },
     {
         title: 'JMironov Studio Portfolio',
         description:
             'Designed a personal portfolio and service site to showcase web design, branding, and marketing work with a clean structure, clear positioning, and easy client contact paths.',
         stack: ['React', 'Tailwind CSS', 'Portfolio', 'Brand Design'],
+        imageSrc: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=500&fit=crop',
+        imageAlt: 'JMironov Studio portfolio preview',
     },
 ]
