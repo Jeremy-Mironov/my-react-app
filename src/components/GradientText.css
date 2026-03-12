@@ -27,7 +27,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: inherit;
 }
 
 .animated-gradient-text.with-border .text-content {

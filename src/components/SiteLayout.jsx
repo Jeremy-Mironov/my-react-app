@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { footerContacts, footerTemplate, layoutCta, layoutNavLinks } from '../assets/dummy-data'
-import FloatingLines from './FloatingLines'
+import FloatingBlocksBackground from './FloatingBlocksBackground'
 function navLinkClass({ isActive }) {
     return `px-4 py-2 ${isActive
         ? 'bg-blue-500/15 text-blue-500 border border-blue-500/40 font-medium rounded-full'
@@ -16,16 +16,7 @@ export function SiteLayout() {
     return (
         <div className="relative isolate flex min-h-screen flex-col bg-slate-950 text-slate-100">
             <div className=" fixed inset-0 z-0" aria-hidden="true">
-                <FloatingLines
-                    enabledWaves={['top', 'middle', 'bottom']}
-                    lineCount={4}
-                    lineDistance={100}
-                    bendRadius={30}
-                    bendStrength={15}
-                    interactive={false}
-                    parallax={true}
-                    mixBlendMode="normal"
-                />
+                <FloatingBlocksBackground />
             </div>
 
             <header className="fixed top-0 left-0 z-50 w-full ">
