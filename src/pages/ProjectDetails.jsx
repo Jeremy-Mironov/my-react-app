@@ -12,12 +12,22 @@ function ProjectPager({ previousProject, nextProject }) {
                     to={`/portfolio/${previousProject.slug}`}
                     className={`${baseClass} border-slate-700 bg-slate-800/70 text-slate-200 hover:border-blue-500/45 hover:bg-slate-800 hover:text-blue-300`}
                 >
-                    <span className="text-xs uppercase tracking-wide text-slate-400">← Previous</span>
+                    <span className="inline-flex items-center gap-1 text-xs uppercase tracking-wide text-slate-400">
+                        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-3.5 w-3.5" aria-hidden="true">
+                            <path d="M12.5 4.5 7 10l5.5 5.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        Previous
+                    </span>
                     <span className="mt-1 line-clamp-2 text-sm text-slate-100">{previousProject.title}</span>
                 </Link>
             ) : (
                 <span className={`${baseClass} cursor-not-allowed border-slate-800 bg-slate-900/70 text-slate-500`}>
-                    <span className="text-xs uppercase tracking-wide text-slate-500">← Previous</span>
+                    <span className="inline-flex items-center gap-1 text-xs uppercase tracking-wide text-slate-500">
+                        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-3.5 w-3.5" aria-hidden="true">
+                            <path d="M12.5 4.5 7 10l5.5 5.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        Previous
+                    </span>
                     <span className="mt-1 text-sm text-slate-600">No previous project</span>
                 </span>
             )}
@@ -27,12 +37,22 @@ function ProjectPager({ previousProject, nextProject }) {
                     to={`/portfolio/${nextProject.slug}`}
                     className={`${baseClass} border-slate-700 bg-slate-800/70 text-right text-slate-200 hover:border-blue-500/45 hover:bg-slate-800 hover:text-blue-300`}
                 >
-                    <span className="text-xs uppercase tracking-wide text-slate-400">Next →</span>
+                    <span className="inline-flex items-center justify-end gap-1 text-xs uppercase tracking-wide text-slate-400">
+                        Next
+                        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-3.5 w-3.5" aria-hidden="true">
+                            <path d="M7.5 4.5 13 10l-5.5 5.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </span>
                     <span className="mt-1 line-clamp-2 text-sm text-slate-100">{nextProject.title}</span>
                 </Link>
             ) : (
                 <span className={`${baseClass} cursor-not-allowed border-slate-800 bg-slate-900/70 text-right text-slate-500`}>
-                    <span className="text-xs uppercase tracking-wide text-slate-500">Next →</span>
+                    <span className="inline-flex items-center justify-end gap-1 text-xs uppercase tracking-wide text-slate-500">
+                        Next
+                        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-3.5 w-3.5" aria-hidden="true">
+                            <path d="M7.5 4.5 13 10l-5.5 5.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </span>
                     <span className="mt-1 text-sm text-slate-600">No next project</span>
                 </span>
             )}
@@ -73,7 +93,24 @@ export default function ProjectDetails() {
                             className="rounded-2xl h-64 w-full object-cover sm:h-80"
                         />
                         <div className="p-6 sm:p-8">
-                            <h2 className="text-2xl font-semibold text-slate-100 sm:text-3xl">{project.title}</h2>
+                            <h2 className="text-2xl font-semibold text-slate-100 sm:text-3xl">
+                                {project.websiteUrl ? (
+                                    <a
+                                        href={project.websiteUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="inline-flex items-center gap-2 text-slate-100 underline decoration-white-400/70 underline-offset-4 transition hover:text-blue-300 hover:decoration-blue-300"
+                                    >
+                                        {project.title}
+                                        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4 text-blue-400" aria-hidden="true">
+                                            <path d="M7 13 13 7" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M8 7h5v5" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </a>
+                                ) : (
+                                    project.title
+                                )}
+                            </h2>
                             <h3 className="mt-5 text-sm font-semibold uppercase tracking-wide text-slate-400">Description</h3>
                             <p className="mt-3 text-base leading-7 text-slate-300">{project.shortDescription}</p>
 
@@ -100,8 +137,11 @@ export default function ProjectDetails() {
                             </div>
 
                             <div className="mt-8">
-                                <Link to="/portfolio" className="text-sm font-semibold text-blue-400 transition hover:text-blue-300">
-                                    ← Back to portfolio
+                                <Link to="/portfolio" className="inline-flex items-center gap-1 text-sm font-semibold text-blue-400 transition hover:text-blue-300">
+                                    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4" aria-hidden="true">
+                                        <path d="M12.5 4.5 7 10l5.5 5.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                    Back to portfolio
                                 </Link>
                             </div>
                         </div>

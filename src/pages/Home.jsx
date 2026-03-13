@@ -3,6 +3,7 @@ import { AboutPreviewSection } from '../sections/AboutPreviewSection'
 import Scene3D from '../components/Scene3D'
 import { CtaSection } from '../sections/CtaSection'
 import { HomeHeroSection } from '../sections/HomeHeroSection'
+import { PortfolioSliderSection } from '../sections/PortfolioSliderSection'
 import { ServicesSection } from '../sections/ServicesSection'
 import { TestimonialsSection } from '../sections/TestimonialsSection'
 
@@ -155,6 +156,7 @@ export default function Home() {
             <AboutPreviewSection />
             <CtaSection />
             <ServicesSection />
+            <PortfolioSliderSection />
             <TestimonialsSection />
         </>
     )

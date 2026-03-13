@@ -308,6 +308,7 @@ export const projects = [
     {
         slug: 'evergreen-renewal-services-website',
         title: 'Evergreen Renewal Services Website',
+        websiteUrl: 'https://egrenewalservices.com/',
         shortDescription:
             'I created a website concept for Evergreen Renewal Services, designed to present remodeling and renovation services in a clear, professional, and conversion-focused way. The project included responsive layout planning, service page structure, branding support, and user-friendly design to help the company attract and convert more customers online.',
         longDescription:
@@ -406,6 +407,7 @@ export const projects = [
     {
         slug: 'freshfit-bath-shower-brand-landing-pages',
         title: 'FreshFit Bath & Shower Brand + Landing Pages',
+        websiteUrl: 'http://freshfitbath.com/',
         shortDescription:
             'I created a website concept for FreshFit Bath & Shower, focused on presenting renovation services in a clean, professional, and conversion-friendly way. The project combined responsive web design, structured service content, and branding elements to help the business build trust and attract new customers online.',
         longDescription:
@@ -504,6 +506,7 @@ export const projects = [
     {
         slug: 'acre-maker-nw-website',
         title: 'Acre Maker NW Website',
+        websiteUrl: 'https://acremakernw.com/',
         shortDescription:
             'I created a website concept for Acre Maker NW, designed to present land clearing and property improvement services in a clear, professional, and conversion-focused way. The project included responsive layout planning, structured service pages, and a user-friendly design to support lead generation and brand trust.',
         longDescription:
@@ -566,6 +569,7 @@ export const projects = [
     {
         slug: 'dwell-website',
         title: 'Dwell Website',
+        websiteUrl: 'http://dwellinc.net/',
         shortDescription:
             'I created a website concept for Dwell, designed to present the brand in a clean, modern, and conversion-focused way. The project included responsive layout planning, structured content sections, and a user-friendly interface to support engagement, trust, and lead generation.',
         longDescription:
@@ -664,6 +668,7 @@ export const projects = [
     {
         slug: 'revival-collision-center-website',
         title: 'Revival Collision Center Website',
+        websiteUrl: 'https://revivalcollisioncenter.com/',
         shortDescription:
             'I created a website concept for Revival Collision Center, designed to present auto body and collision repair services in a clear, professional, and conversion-focused way. The project included responsive layout planning, structured service content, and a user-friendly design that helps build trust and attract new customers.',
         longDescription:
@@ -678,6 +683,7 @@ export const projects = [
 
 <div class='grid gap-6 md:grid-cols-3'>
   <div class='rounded-2xl bg-gray-50 p-5'>
+    websiteUrl: 'https://www.jmironovstudio.com/',
     <div class='mb-3 flex items-center gap-2'>
       <span class='inline-flex h-6 w-6 items-center justify-center text-gray-900'>
         <svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' class='h-5 w-5' aria-hidden='true'>

@@ -1,0 +1,48 @@
+<svg width="256" height="200" viewBox="0 0 256 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="faviconJGrad" x1="58" y1="34" x2="58" y2="162" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5B7A" />
+      <stop offset="0.55" stop-color="#E33A97" />
+      <stop offset="1" stop-color="#8B33CC" />
+    </linearGradient>
+
+    <linearGradient id="faviconWarmGrad" x1="104" y1="34" x2="150" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5E7A" />
+      <stop offset="1" stop-color="#FF9A3D" />
+    </linearGradient>
+
+    <linearGradient id="faviconCoolGrad" x1="132" y1="142" x2="220" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#159FD1" />
+      <stop offset="1" stop-color="#46E7FF" />
+    </linearGradient>
+  </defs>
+
+  <path
+    d="M76 34V132C76 150 63 162 46 162H40"
+    stroke="url(#faviconJGrad)"
+    stroke-width="18"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M104 34L148 80"
+    stroke="url(#faviconWarmGrad)"
+    stroke-width="16"
+    stroke-linecap="square"
+  />
+
+  <path
+    d="M132 142L194 72"
+    stroke="url(#faviconCoolGrad)"
+    stroke-width="16"
+    stroke-linecap="square"
+  />
+
+  <path
+    d="M218 34V150"
+    stroke="url(#faviconCoolGrad)"
+    stroke-width="18"
+    stroke-linecap="square"
+  />
+</svg>
