@@ -183,25 +183,25 @@ export const testimonialsSection = {
         "Hear what our users say about us. We're always looking for ways to improve. If you have a positive experience with us, leave a review.",
     items: [
         {
-            name: 'Sarah Mitchell',
-            role: 'Small Business Owner',
+            name: 'Dennis Polyashov',
+            role: 'Acre Maker NW Owner',
             quote:
                 'The website redesign made our business look significantly more professional, and we started getting better quality leads within weeks.',
-            image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop',
+            image: 'https://placehold.co/200x200/1e293b/e2e8f0?text=Client',
         },
         {
-            name: 'Daniel Brooks',
-            role: 'Marketing Manager',
+            name: 'Dmitry Govrilov',
+            role: 'Dwell inc. Owner',
             quote:
                 'Great communication, fast updates, and strong design instincts. The final result matched our brand and performed better than our previous site.',
-            image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&h=200&auto=format&fit=crop',
+            image: 'https://placehold.co/200x200/1e293b/e2e8f0?text=Client',
         },
         {
-            name: 'Nina Alvarez',
-            role: 'Startup Founder',
+            name: 'Edward Molyakin',
+            role: 'FreshFit Owner',
             quote:
                 'From layout to SEO details, everything was handled with care. The project was delivered on time and exceeded our expectations.',
-            image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&h=200&auto=format&fit=crop&q=60',
+            image: 'https://placehold.co/200x200/1e293b/e2e8f0?text=Client',
         },
     ],
 }
@@ -401,7 +401,7 @@ export const projects = [
   </div>
 </div>`,
         stack: ['WordPress', 'Local SEO', 'Landing Pages', 'Elementor', 'Responsive Design', 'Content Creation'],
-        imageSrc: '/img/EG.png',
+        imageSrc: 'https://placehold.co/800x500/0f172a/e2e8f0?text=Evergreen+Project',
         imageAlt: 'Evergreen Renewal Services website preview',
     },
     {
@@ -500,7 +500,7 @@ export const projects = [
   </div>
 </div>`,
         stack: ['WordPress', 'Local SEO', 'Landing Pages', 'Elementor', 'Responsive Design'],
-        imageSrc: '/img/FreshFit.png',
+        imageSrc: 'https://placehold.co/800x500/0f172a/e2e8f0?text=FreshFit+Project',
         imageAlt: 'FreshFit Bath and Shower landing page preview',
     },
     {
@@ -563,7 +563,7 @@ export const projects = [
             </div> 
             </div>`,
         stack: ['WordPress', 'Local SEO', 'Landing Pages', 'Elementor', 'Responsive Design'],
-        imageSrc: '/img/Acremaker.png',
+        imageSrc: 'https://placehold.co/800x500/0f172a/e2e8f0?text=Acre+Maker+Project',
         imageAlt: 'Acre Maker NW project preview',
     },
     {
@@ -662,7 +662,7 @@ export const projects = [
   </div>
 </div>`,
         stack: ['WordPress', 'Local SEO', 'Landing Pages', 'Elementor', 'Responsive Design'],
-        imageSrc: '/img/Dwell.png',
+        imageSrc: 'https://placehold.co/800x500/0f172a/e2e8f0?text=Dwell+Project',
         imageAlt: 'Dwell project preview',
     },
     {
@@ -761,7 +761,7 @@ export const projects = [
     </div>
   </div>
 </div>`  , stack: ['WordPress', 'Local SEO', 'Landing Pages', 'Elementor', 'Responsive Design'],
-        imageSrc: '/img/Revival.png',
+        imageSrc: 'https://placehold.co/800x500/0f172a/e2e8f0?text=Revival+Project',
         imageAlt: 'Revival Collision Center website preview',
     },
 ]

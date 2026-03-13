@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 import { footerContacts, footerTemplate, layoutCta, layoutNavLinks } from '../assets/dummy-data'
 import FloatingBlocksBackground from './FloatingBlocksBackground'
 import PixelBlast from './PixelBlast';
@@ -120,9 +120,12 @@ export function SiteLayout() {
                             <path d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
-                    <button className="hidden rounded-full bg-blue-500 px-4 py-2 text-white shadow-[0_0_25px_rgba(59,130,246,0.35)] transition hover:bg-blue-400 md:block">
+                    <Link
+                        to="/contact"
+                        className="hidden rounded-full bg-blue-500 px-4 py-2 text-white shadow-[0_0_25px_rgba(59,130,246,0.35)] transition hover:bg-blue-400 md:block"
+                    >
                         {layoutCta[0]}
-                    </button>
+                    </Link>
                 </nav>
 
             </header>
@@ -132,14 +135,57 @@ export function SiteLayout() {
             </main>
 
             <footer className="relative z-20 border-t border-slate-800/80 bg-slate-950/80 backdrop-blur">
-                <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-4 py-6 text-sm sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-                    <p className="text-slate-300">© {currentYear} {footerTemplate[0]}</p>
-                    <div className="flex items-center gap-4 text-slate-400">
-                        {footerContacts.map((contact) => (
-                            <a key={contact.href} href={contact.href} className="transition hover:text-slate-100">
-                                {contact.value}
-                            </a>
-                        ))}
+                <div className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+                    <div className="grid gap-10 border-b border-slate-800/80 pb-10 md:grid-cols-2 lg:grid-cols-4">
+                        <div className="space-y-3">
+                            <div className="flex items-center gap-3">
+                                <img src="/favicon.svg" alt="JMironov icon" className="h-7 w-7" />
+                                <h3 className="text-lg font-semibold text-slate-100">JMironov</h3>
+                            </div>
+                            <p className="max-w-xs text-sm leading-6 text-slate-300">Web development, design, and SEO support for service businesses.</p>
+                        </div>
+
+                        <div className="space-y-3">
+                            <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-300">Quick links</h4>
+                            <ul className="space-y-2 text-sm text-slate-400">
+                                {layoutNavLinks.map((link) => (
+                                    <li key={`footer-${link.to}`}>
+                                        <NavLink to={link.to} end={link.to === '/'} className="transition hover:text-slate-100">
+                                            {link.label}
+                                        </NavLink>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="space-y-3">
+                            <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-300">Contact</h4>
+                            <ul className="space-y-2 text-sm text-slate-400">
+                                {footerContacts.map((contact) => (
+                                    <li key={`footer-contact-${contact.href}`}>
+                                        <a href={contact.href} className="transition hover:text-slate-100">
+                                            {contact.value}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="space-y-3">
+                            <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-300">Start a project</h4>
+                            <p className="text-sm leading-6 text-slate-400">Tell me about your goals and I’ll reply with a practical plan.</p>
+                            <Link
+                                to="/contact"
+                                className="inline-flex items-center rounded-full bg-blue-500 px-4 py-2 text-sm font-semibold text-white shadow-[0_0_25px_rgba(59,130,246,0.35)] transition hover:bg-blue-400"
+                            >
+                                {layoutCta[0]}
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className="mt-6 flex flex-col gap-3 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+                        <p>© {currentYear} {footerTemplate[0]}</p>
+                        <p>Built with React + Tailwind CSS</p>
                     </div>
                 </div>
             </footer>
