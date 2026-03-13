@@ -2,7 +2,7 @@ import { testimonialsSection } from '../assets/dummy-data'
 
 export function TestimonialsSection() {
     return (
-        <section id="testimonials" className="backdrop-blur-xl border-b border-slate-800 bg-slate-900/45 py-12 sm:py-16 lg:py-20">
+        <section id="testimonials" className="backdrop-blur-sm border-b border-slate-800  py-12 sm:py-16">
             <div className="mx-auto flex w-full max-w-6xl flex-col items-start px-4 sm:px-6 lg:px-8">
                 <h2 className="mt-4 bg-gradient-to-r from-slate-100 to-slate-400 bg-clip-text text-3xl font-medium text-transparent sm:text-4xl">
                     {testimonialsSection.heading}

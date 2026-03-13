@@ -3,7 +3,7 @@ import { homeCtaSection } from '../assets/dummy-data'
 
 export function CtaSection() {
     return (
-        <section className="backdrop-blur-sm border-b border-slate-800  bg-slate-900/75 py-12 sm:py-16">
+        <section className="backdrop-blur-sm border-b border-slate-800  py-12 sm:py-16">
             <div className=" mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 ">
                 <div className="p-6 sm:p-8 text-center">
                     <h2 className="text-2xl font-bold text-slate-100 sm:text-3xl">{homeCtaSection.heading}</h2>

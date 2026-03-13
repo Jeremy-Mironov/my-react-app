@@ -17,10 +17,11 @@ export function PortfolioMainSection() {
                         <ProjectCard
                             key={project.title}
                             title={project.title}
-                            description={project.description}
+                            shortDescription={project.shortDescription}
                             stack={project.stack}
                             imageSrc={project.imageSrc}
                             imageAlt={project.imageAlt}
+                            slug={project.slug}
                         />
                     ))}
                 </div>

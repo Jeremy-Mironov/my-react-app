@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { footerContacts, footerTemplate, layoutCta, layoutNavLinks } from '../assets/dummy-data'
 import FloatingBlocksBackground from './FloatingBlocksBackground'
+import PixelBlast from './PixelBlast';
 function navLinkClass({ isActive }) {
     return `px-4 py-2 ${isActive
         ? 'bg-blue-500/15 text-blue-500 border border-blue-500/40 font-medium rounded-full'
@@ -16,7 +17,27 @@ export function SiteLayout() {
     return (
         <div className="relative isolate flex min-h-screen flex-col bg-slate-950 text-slate-100">
             <div className=" fixed inset-0 z-0" aria-hidden="true">
-                <FloatingBlocksBackground />
+                <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+                    <PixelBlast
+                        variant="circle"
+                        pixelSize={7}
+                        color="#2071b9"
+                        patternScale={4}
+                        patternDensity={3}
+                        pixelSizeJitter={1.5}
+                        enableRipples
+                        rippleSpeed={0.4}
+                        rippleThickness={0.12}
+                        rippleIntensityScale={1.5}
+                        liquid={false}
+                        liquidStrength={0.12}
+                        liquidRadius={1.2}
+                        liquidWobbleSpeed={5}
+                        speed={0.5}
+                        edgeFade={0.4}
+                        transparent
+                    />
+                </div>
             </div>
 
             <header className="fixed top-0 left-0 z-50 w-full ">

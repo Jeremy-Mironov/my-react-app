@@ -42,6 +42,21 @@ export function PortfolioCardSwapSection() {
                                 className="h-full w-full object-cover"
                             />
                         </Card>
+                        <Card className="overflow-hidden border-slate-700 bg-slate-950">
+                            <img
+                                src="/img/EG.png"
+                                alt="Evergreen Renewal Services Project"
+                                className="h-full w-full object-cover"
+                            />
+                            </Card>
+                        <Card className="overflow-hidden border-slate-700 bg-slate-950">
+                            <img
+                                src="/img/FreshFit.png"
+                                alt="FreshFit Project"
+                                className="h-full w-full object-cover"
+                            />
+
+                        </Card>
                     </CardSwap>
                 </div>
             </div>
