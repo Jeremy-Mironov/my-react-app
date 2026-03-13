@@ -243,8 +243,8 @@ export const contactPageContent = [
 export const contactLinks = [
     { label: 'Email', value: 'jeremymironov@gmail.com', href: 'mailto:jeremymironov@gmail.com' },
     { label: 'Phone', value: '+1 (971) 326-7264', href: 'tel:+19713267264' },
-    { label: 'LinkedIn', value: 'linkedin.com/in/yourprofile', href: 'https://www.linkedin.com' },
-    { label: 'GitHub', value: 'github.com/yourprofile', href: 'https://github.com' },
+    // { label: 'LinkedIn', value: 'linkedin.com/in/yourprofile', href: 'https://www.linkedin.com' },
+    // { label: 'GitHub', value: 'github.com/yourprofile', href: 'https://github.com' },
 ]
 
 export const coreSkills = ['HTML', 'CSS', 'JavaScript', 'PHP', 'Python']
