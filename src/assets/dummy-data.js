@@ -8,11 +8,11 @@ export const layoutNavLinks = [
 export const layoutCta = ['Contact Us']
 
 export const footerContacts = [
-    { href: 'mailto:hello@example.com', value: 'hello@example.com' },
-    { href: 'tel:+1234567890', value: '+1 (234) 567-890' },
+    { href: 'mailto:jeremymironov@gmail.com', value: 'jeremymironov@gmail.com' },
+    { href: 'tel:+19713267264', value: '+1 (971) 326-7264' },
 ]
 
-export const footerTemplate = ['Web & SEO Specialist. All rights reserved.']
+export const footerTemplate = ['JMironov.   Web & SEO Specialist. All rights reserved.']
 
 export const homeHeroContent = [
     {
@@ -241,8 +241,8 @@ export const contactPageContent = [
 ]
 
 export const contactLinks = [
-    { label: 'Email', value: 'hello@example.com', href: 'mailto:hello@example.com' },
-    { label: 'Phone', value: '+1 (234) 567-890', href: 'tel:+1234567890' },
+    { label: 'Email', value: 'jeremymironov@gmail.com', href: 'mailto:jeremymironov@gmail.com' },
+    { label: 'Phone', value: '+1 (971) 326-7264', href: 'tel:+19713267264' },
     { label: 'LinkedIn', value: 'linkedin.com/in/yourprofile', href: 'https://www.linkedin.com' },
     { label: 'GitHub', value: 'github.com/yourprofile', href: 'https://github.com' },
 ]

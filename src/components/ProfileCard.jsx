@@ -1,4 +1,5 @@
 import { useMemo, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export function ProfileCard({
     avatarUrl = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80',
@@ -76,7 +77,7 @@ export function ProfileCard({
         'repeating-linear-gradient(0deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 3px)'
 
     return (
-        <div className={`relative ${className}`}>
+        <div className={`relative overflow-x-clip pt-[80px] sm:pt-0 ${className}`}>
             {behindGlowEnabled && (
                 <div
                     className="pointer-events-none absolute -inset-6 -z-10 rounded-3xl blur-2xl transition-opacity duration-300"
@@ -148,7 +149,7 @@ export function ProfileCard({
                     />
                 )}
 
-                <div className="relative z-30 flex min-h-[250px] flex-col p-4 sm:p-5">
+                <div className="relative z-30 flex min-h-[250px] flex-col px-4 pb-4 pt-[26px] sm:px-5 sm:pb-5 sm:pt-[30px]">
                     {showUserInfo && (
                         <div className="text-center">
                             <h3 className="text-2xl font-bold tracking-tight text-slate-100">{name}</h3>
@@ -185,7 +186,7 @@ export function ProfileCard({
                     </div>
 
                     <div className="mt-3 flex items-center justify-between gap-3">
-                        <div className="flex items-center gap-2 text-xs text-slate-300">
+                        <div className="flex flex-wrap items-center gap-2 text-xs text-slate-300">
                             {miniAvatarUrl && (
                                 <img
                                     src={miniAvatarUrl}
@@ -193,7 +194,7 @@ export function ProfileCard({
                                     className="h-7 w-7 rounded-full border border-slate-600 object-cover"
                                 />
                             )}
-                            <span className="rounded-full border border-slate-600 bg-slate-900/80 px-2 py-1">
+                            <span className="max-w-full break-all rounded-full border border-slate-600 bg-slate-900/80 px-2 py-1">
                                 @{handle}
                             </span>
                             <span className="rounded-full border border-emerald-400/40 bg-emerald-500/10 px-2 py-1 text-emerald-300">
@@ -202,13 +203,13 @@ export function ProfileCard({
                         </div>
                     </div>
 
-                    <button
-                        type="button"
+                    <Link
+                        to="/contact"
                         onClick={onContactClick}
-                        className="mt-3 inline-flex w-full items-center justify-center rounded-xl border border-indigo-200/20 bg-slate-100 px-3 py-2 text-xs font-semibold text-slate-950 transition hover:bg-white"
+                        className="mt-3 inline-flex w-full items-center justify-center rounded-xl border border-indigo-200/20 bg-slate-100 px-3 py-2 text-xs font-semibold text-slate-950 transition duration-200 hover:-translate-y-0.5 hover:bg-white"
                     >
                         {contactText}
-                    </button>
+                    </Link>
                 </div>
             </article>
         </div>
