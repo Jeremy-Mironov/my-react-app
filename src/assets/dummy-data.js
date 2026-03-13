@@ -401,7 +401,7 @@ export const projects = [
   </div>
 </div>`,
         stack: ['WordPress', 'Local SEO', 'Landing Pages', 'Elementor', 'Responsive Design', 'Content Creation'],
-        imageSrc: 'https://placehold.co/800x500/0f172a/e2e8f0?text=Evergreen+Project',
+        imageSrc: '/img/EG.png',
         imageAlt: 'Evergreen Renewal Services website preview',
     },
     {
@@ -500,7 +500,7 @@ export const projects = [
   </div>
 </div>`,
         stack: ['WordPress', 'Local SEO', 'Landing Pages', 'Elementor', 'Responsive Design'],
-        imageSrc: 'https://placehold.co/800x500/0f172a/e2e8f0?text=FreshFit+Project',
+        imageSrc: '/img/FreshFit.png',
         imageAlt: 'FreshFit Bath and Shower landing page preview',
     },
     {
@@ -563,7 +563,7 @@ export const projects = [
             </div> 
             </div>`,
         stack: ['WordPress', 'Local SEO', 'Landing Pages', 'Elementor', 'Responsive Design'],
-        imageSrc: 'https://placehold.co/800x500/0f172a/e2e8f0?text=Acre+Maker+Project',
+        imageSrc: '/img/Acremaker.png',
         imageAlt: 'Acre Maker NW project preview',
     },
     {
@@ -662,7 +662,7 @@ export const projects = [
   </div>
 </div>`,
         stack: ['WordPress', 'Local SEO', 'Landing Pages', 'Elementor', 'Responsive Design'],
-        imageSrc: 'https://placehold.co/800x500/0f172a/e2e8f0?text=Dwell+Project',
+        imageSrc: '/img/Dwell.png',
         imageAlt: 'Dwell project preview',
     },
     {
@@ -761,7 +761,7 @@ export const projects = [
     </div>
   </div>
 </div>`  , stack: ['WordPress', 'Local SEO', 'Landing Pages', 'Elementor', 'Responsive Design'],
-        imageSrc: 'https://placehold.co/800x500/0f172a/e2e8f0?text=Revival+Project',
+        imageSrc: '/img/Revival.png',
         imageAlt: 'Revival Collision Center website preview',
     },
 ]

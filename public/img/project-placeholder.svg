@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect x="250" y="140" width="300" height="220" rx="18" fill="#334155" opacity="0.7"/>
+  <path d="M290 300L360 230L420 280L470 240L510 300" stroke="#93c5fd" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="350" cy="210" r="18" fill="#93c5fd"/>
+  <text x="400" y="390" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="28" font-weight="600">Project Preview</text>
+</svg>
